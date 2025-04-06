@@ -21,6 +21,11 @@
   --dark-color-lighter: #4d4d4d;
   --accent-color: #16443a;
   --section-background-color: #d9e9e6;
+  /* New color scheme */
+  --primary-dark: #1a2a3a;  /* Dark blue-gray for navbar */
+  --primary-accent: #3498db; /* Bright blue for accents */
+  --secondary-accent: #f39c12; /* Orange for highlights */
+  --section-background-color: #f5f8fa;
 }
 
 html {
@@ -62,8 +67,10 @@ input {
 }
 
 .header {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--primary-dark);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -76,7 +83,7 @@ input {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-block: 0.8rem;
+  padding-block: 0.4rem;
 }
 
 .title {
@@ -89,9 +96,9 @@ input {
   text-align: center;
 }
 
-section:not(.hero) .text-content-group {
+/* section:not(.hero) .text-content-group {
   margin: 8rem 0 2rem;
-}
+} */
 
 /*************************** Navbar ***************************/
 /* Styles for the navigation bar and logo. */
@@ -114,7 +121,7 @@ section:not(.hero) .text-content-group {
 
 .toggle-icon {
   font-size: 2.6rem;
-  color: var(--body-font-color);
+  color: var(--light-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,10 +131,11 @@ section:not(.hero) .text-content-group {
 
 .close-icon {
   opacity: 0;
+  color: var(--light-color);
 }
 
 .open-icon {
-  color: var(--accent-color);
+  color: var(--light-color);
   transition-delay: 0.25s;
 }
 
@@ -165,18 +173,18 @@ section:not(.hero) .text-content-group {
   display: inline-block;
   font-weight: 500;
   line-height: 1.6rem;
-  padding: 0.8rem 0;
-  color: var(--body-font-color);
+  padding: 0.5rem 0;
+  color: var(--light-color);
   transition: color 0.25s;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--accent-color);
+  color: var(--secondary-accent);
 }
 
 .first-link {
-  color: var(--accent-color);
+  color: var(--primary-accent);
 }
 
 .search-box {
@@ -195,15 +203,16 @@ section:not(.hero) .text-content-group {
 }
 
 .search-icon {
-  left: 2rem;
+  left: 1.6rem;
 }
 
 .search-input {
-  width: 20rem;
-  height: 4.8rem;
-  padding: 1.2rem 6rem 1.2rem 5.4rem;
-  background-color: var(--light-color);
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.05);
+  width: 18rem;
+  height: 3.8rem;
+  padding: 1rem 5rem 1rem 4.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-color);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.8rem;
 }
 
@@ -211,7 +220,7 @@ section:not(.hero) .text-content-group {
   text-align: center;
   font-weight: 500;
   line-height: 1.4;
-  color: var(--dark-color);
+  color: rgba(255, 255, 255, 0.7);
   transition: all 0.2s ease-in-out;
 }
 
@@ -228,49 +237,288 @@ section:not(.hero) .text-content-group {
 
 .home {
   position: relative;
-  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  background: url('Images/background.jpg') no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 50vh; /* Reduced from 60vh to decrease vertical space */
+  max-width: 85%; /* Limit width to create whitespace on sides */
+  margin: 0 auto; /* Center the container */
+  background: url('Images/summer_research_logo.png') no-repeat;
+  background-size: contain;
   background-position: center;
+  /* background-color: #f5f8fa; */
+  margin-bottom: 40px;
 }
 
+#about {
+  padding-top: 2rem; /* Add some padding to the top of the About section */
+}
+
+/* Remove the text content from the home section */
 .home .content {
-  flex: 1 1 40rem;
-  padding-top: 6.5rem;
+  display: none;
 }
 
-.home .content h3 {
-  font-size: 5rem;
-  color: var(--light-color);
-  padding-left: 2rem;
+/* Create a new apply button container */
+.apply-button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /* Increase margin to move button further down */
 }
 
-.home .content p {
-  font-size: 1.7rem;
-  color: var(--light-color);
-  padding: 1rem 2rem;
+/* Style for the apply button */
+.apply-button {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--primary-accent); /* Using blue accent from your color scheme */
+  color: white;
+  padding: 1.6rem 3.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
+
+.apply-button:hover,
+.apply-button:focus {
+  background-color: #2980b9; /* Slightly darker blue on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query adjustments */
+@media screen and (min-width: 800px) {
+  .home {
+    max-width: 95%; /* Wider on mobile screens */
+    min-height: 45vh; /* Shorter on mobile screens */
+  }
+  
+  .apply-button {
+    font-size: 2rem;
+    padding: 1.8rem 4rem;
+  }
+
+  .apply-button-container {
+    margin-top: 50px; /* Slightly less space on smaller screens */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    max-width: 80%; /* Even narrower on larger screens */
+    min-height: 55vh; /* Slightly taller on larger screens */
+  }
+  .apply-button-container {
+    margin-top: 70px; /* Even more space on larger screens */
+  }
+}
+
+.research-line-tag {
+  display: inline-block;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px; /* More curved */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.research-line-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Research line specific colors */
+.research-line-CPS { background-color: #ce0b10; }
+.research-line-DSI { background-color: #642483; }
+.research-line-DS2 { background-color: #F8AA00; }
+.research-line-HBI { background-color: #4cc2f1; }
+.research-line-IHCI { background-color: #65b32e; }
+.research-line-RSS { background-color: #E6007E; }
+.research-line-ToC { background-color: #7aa720; }
 
 /*************************** About ***************************/
-/* Styles for the About section. */
 
-.about .image-content-group {
-  margin: 2rem 8rem;
+.about {
+  padding: 3rem 0;
+  background-color: var(--section-background-color);
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .about .text-content-group {
-  margin: 4rem !important;
+  max-width: 1200px; /* More reasonable max-width */
+  padding: 2rem;
+  width: 85%; /* Width relative to parent */
+  margin: 0 auto; /* Auto margins for centering */
 }
 
 .about .section-tagline {
-  padding: 0 0 1rem;
-  color: #f9ba45;
+  color: var(--primary-accent);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.about .section-title {
+  font-size: 3.6rem;
+  line-height: 1.3;
+  margin-bottom: 4rem;
+  color: var(--primary-dark);
+  text-align: left; 
+}
+
+/* Program features section - better spacing and alignment */
+.program-overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.program-feature h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+}
+
+.program-feature h3 i {
+  margin-right: 1rem;
+  color: var(--primary-accent);
+}
+
+.program-feature p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--body-font-color);
+}
+
+/* Timeline section - better shadow and spacing */
+.program-details {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  padding: 3rem;
+  margin: 4rem auto; /* Center with auto margins */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  width: 90%; /* Slightly narrower than parent */
+  max-width: 1000px; /* Add max-width */
+}
+
+.timeline h3 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.timeline-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items */
+  gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.timeline-list li {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 150px;
+  max-width: 200px; /* Add max-width to prevent stretching */
+  text-align: center;
+  font-size: 1.6rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-list .date {
+  display: block;
+  font-weight: 700;
+  color: var(--primary-accent);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+/* Smaller, centered button */
+.about .button {
+  /* Display as block element */
+  display: block;
+  
+  /* Set auto margins on left and right for centering */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+  /* Control the size */
+  width: fit-content;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.6rem;
+  
+  /* Style */
+  background-color: var(--primary-accent);
+  color: white;
+  text-align: center;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about .button:hover {
+  background-color: var(--primary-dark);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+  .program-overview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .about .section-title {
+    font-size: 3.6rem;
+  }
+  
+  .about .text-content-group {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .program-overview {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .about .section-title {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about .text-content-group {
+    padding: 2rem 2rem; /* Reduced side padding on large screens */
+    width: 80%; /* Slightly narrower on large screens */
+  }
 }
 
 /*************************** Intern ***************************/
@@ -278,7 +526,7 @@ section:not(.hero) .text-content-group {
 
 .intern {
   padding: 5rem 0;
-  background-color: var(--section-background-color);
+  background-color: #f0f5f9;
 }
 
 .section-metadata {
@@ -288,7 +536,7 @@ section:not(.hero) .text-content-group {
 .section-tagline {
   display: inline-block;
   font-weight: 500;
-  color: var(--accent-color);
+  color: var(--primary-accent);
   line-height: 2.4rem;
   margin-bottom: 0.8rem;
 }
@@ -299,12 +547,43 @@ section:not(.hero) .text-content-group {
   margin-bottom: 2.2rem;
 }
 
+/* Add a bit more padding to the card itself */
 .card {
   text-align: center;
-  margin: 3rem;
-  padding: 3rem 2.2rem 0;
+  margin: 2rem;
+  padding: 3rem 2.2rem 2rem; /* Increased bottom padding */
   background-color: var(--light-color);
   border-radius: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Update button styling to match site color scheme and add more spacing */
+.card .button {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--primary-dark); /* Using the dark blue from your color scheme */
+  color: white;
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.8rem;
+  margin-top: 1.8rem; /* Add more space above the button */
+  margin-bottom: 1.5rem; /* Add more space below the button */
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.card .button:hover {
+  background-color: var(--primary-accent); /* Blue accent color on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .card-body {
@@ -321,6 +600,48 @@ section:not(.hero) .text-content-group {
 
 .card-body p {
   line-height: 2.5rem;
+}
+
+.no-projects-div {
+  display: none;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+}
+
+.no-projects-div h3 {
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.no-projects-div p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Express interest button styling */
+.express-interest-button {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--primary-accent); /* Using the blue accent from your color scheme */
+  color: white;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.express-interest-button:hover,
+.express-interest-button:focus {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /*********************** Filter Button **********************/
@@ -344,7 +665,7 @@ section:not(.hero) .text-content-group {
 
 .filter-button.active,
 .filter-button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--secondary-accent);
 }
 
 /*************************** Other Buttons ***************************/
@@ -373,20 +694,17 @@ section:not(.hero) .text-content-group {
   border-color: var(--accent-color);
 }
 
-section:not(.hero) .button {
+/* section:not(.hero) .button {
   margin: 5rem 0;
-}
+} */
 
 /*************************** Footer **************************/
 /* Styles for the website footer. */
 
 #footer {
   text-align: center;
-  padding: 5rem 0 3rem;
-}
-
-.climdes-data {
-  margin-block: 2rem;
+  padding: 3rem 0 2rem;
+  background-color: var(--primary-dark); /* Match navbar color for consistency */
 }
 
 #footer .logo {
@@ -394,48 +712,43 @@ section:not(.hero) .button {
   margin: 0 auto;
 }
 
-.climdes-description {
-  margin: 1.3rem 0 1rem;
-  line-height: 3rem;
+#footer .logo-image {
+  max-width: 150px;
+  /* Remove the white background and add styling to make the logo visible */
+  padding: 5px;
 }
 
-.footer-group {
-  margin: 3rem 0 1rem;
-}
-
-.footer-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 2rem;
-}
-
-.footer-group .list {
-  margin: inherit;
-}
-
-.footer-group .link {
-  line-height: 4rem;
+.footer-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .horizontal-line {
-  margin-block: 3rem;
+  margin-block: 1.5rem;
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.copyright-information {
-  line-height: 2.4rem;
+.footer-bottom-data {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--light-color);
 }
 
-.legal-information a {
-  font-weight: 500;
-  margin: 0 1.2rem;
-  transition: color 0.5s;
-}
-
-.legal-information a:hover,
-.legal-information a:focus {
-  color: var(--accent-color);
+@media screen and (min-width: 992px) {
+  #footer {
+    padding: 2.5rem 0 1.5rem;
+  }
+  
+  .footer-content {
+    margin-bottom: 1rem;
+  }
+  
+  .horizontal-line {
+    margin-block: 1rem;
+  }
 }
 
 /***************************** Media Queries ***********************/
@@ -476,13 +789,13 @@ section:not(.hero) .button {
     font-size: 3.2rem;
   }
 
-  section:not(.home) .text-content-group {
+  /* section:not(.home) .text-content-group {
     margin: 10rem 0 2rem;
-  }
+  } */
 
-  .about .text-content-group {
+  /* .about .text-content-group {
     margin: 8rem !important;
-  }
+  } */
 
   .footer-bottom-data {
     display: flex;
@@ -546,7 +859,7 @@ section:not(.hero) .button {
   }
 
   .menu .list-item {
-    margin: 0 1.6rem;
+    margin: 0.8 1.2rem;
   }
 
   .search-box {
@@ -626,9 +939,9 @@ section:not(.hero) .button {
     font-size: 3rem;
   }
 
-  section:not(.hero) .text-content-group {
+  /* section:not(.hero) .text-content-group {
     margin: 20rem 0 2rem;
-  }
+  } */
 
   .section-tagline {
     font-size: 2.5rem;

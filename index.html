@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLIMDES Internship</title>
+    <title>LASIGE Summer of Research</title>
     <link rel="stylesheet" href="style.css" /> <!-- Link to external stylesheet -->
     <!-- Import external CSS libraries -->
     <link
@@ -28,11 +28,10 @@
   </head>
 
   <body>
-    
     <header class="header">
       <nav class="navbar container">
         <a href="index.html" class="logo">
-          <img src="Images/logo.jpeg" alt="" class="logo-image" />
+          <img src="Images/logo.png" alt="" class="logo-image" />
         </a>
         <button type="button" class="menu-toggler">
           <!-- Hamburger menu button -->
@@ -54,6 +53,8 @@
             <li class="list-item">
               <a href="#intern" class="nav-link">Apply Now</a>
             </li>
+            <li class="list-item">
+              <a href="https://www.lasige.pt" target="_blank" class="nav-link">LASIGE Page</a>
           </ul>
           <div class="search-box">
             <!-- Search box -->
@@ -69,7 +70,7 @@
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
                     d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
-                    fill="rgba(83,91,92,1)"
+                    fill="rgba(255, 255, 255, 0.9)"
                   />
                 </svg>
               </span>
@@ -81,130 +82,131 @@
     </header>
 
     <section class="home" id="home">
-      <!-- Home section with a background image -->
-      <div class="content">
-        <h3>CLIMDES Internship</h3>
-        <p>In every seed lies the promise of an extraordinary harvest.</p>
-        <div class="button-home">
-          <a href="#intern" class="button button-normal">Apply Now</a>
-        </div>
+      <div class="apply-button-container">
+        <a href="#intern" class="apply-button">Apply Now</a>
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
-      <!-- About section -->
-      <div class="about-container d-grid">
-        <div class="image-content-group">
-          <img src="Images/1.png" alt="" />
-        </div>
-        <div class="text-content-group">
-          <div class="section-metadata">
-            <span class="section-tagline">World-Class Mentorship</span>
-            <h2 class="title section-title">
-              Explore, engage, and envision with CLIMDES.
-            </h2>
-            <p>
-              Whether you're a data science enthusiast, an aspiring agricultural
-              expert, or an innovator ready to take on real-world challenges, we
-              invite you to embark on this internship journey with us. Together,
-              we can cultivate a future where agriculture not only sustains us
-              but enriches our lives and our planet.
-            </p>
+      <div class="text-content-group">
+        <div class="section-metadata">
+          <span class="section-tagline">Research Excellence & Innovation</span>
+          <h2 class="title section-title">
+            Join LASIGE Summer of Research: Shaping Tomorrow's Researchers
+          </h2>
+          
+          <div class="program-overview">
+            <div class="program-feature">
+              <h3><i class="fa-solid fa-graduation-cap"></i> Hands-On Research Experience</h3>
+              <p>
+                Our 3-month summer program (July-September) offers undergraduate and first-year master students 
+                direct involvement in cutting-edge research projects, with expert mentorship from LASIGE researchers.
+              </p>
+            </div>
+            
+            <div class="program-feature">
+              <h3><i class="fa-solid fa-flask"></i> Comprehensive Training</h3>
+              <p>
+                Gain valuable skills through specialized workshops covering research fundamentals 
+                (literature reviews, academic writing) and technical training (machine learning, data analysis), 
+                preparing you for a successful research career.
+              </p>
+            </div>
+            
+            <div class="program-feature">
+              <h3><i class="fa-solid fa-users"></i> Supportive Community</h3>
+              <p>
+                Become part of a vibrant research environment with academic and social events, 
+                building connections with fellow students and experienced researchers while 
+                discovering your research potential.
+              </p>
+            </div>
           </div>
-          <a href="#" class="button">Apply Now</a>
+          
+          <div class="program-details">
+            <div class="timeline">
+              <h3>Key Dates for 2025</h3>
+              <ul class="timeline-list">
+                <li><span class="date">May 5th</span> Applications Open</li>
+                <li><span class="date">May 31st</span> Application Deadline</li>
+                <li><span class="date">June 13th</span> Candidate Selection</li>
+                <li><span class="date">June 30th</span> Program Start</li>
+                <li><span class="date">Sept 30th</span> Program End</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <a href="#intern" class="button">Learn More & Apply</a>
       </div>
     </section>
 
     <section id="intern" class="intern">
-      <!-- Internship section -->
       <div class="container">
         <div class="section-metadata">
-          <span class="section-tagline">Intern With Us</span>
+          <span class="section-tagline">Research Opportunities</span>
           <h2 class="title section-title">
-            We invite you to embark on this internship journey with us!
+            We invite you to join our research experience program!
           </h2>
           <div id="filter-buttons">
-            <!-- Filter buttons for internship categories -->
+            <!-- Filter buttons for project categories -->
             <button class="filter-button active" data-category="all">
               All
             </button>
-            <button class="filter-button" data-category="Technical">
-              Technical
+            <button class="filter-button" data-category="CPS">
+              CPS
             </button>
-            <button class="filter-button" data-category="Non-Technical">
-              Non-Technical
+            <button class="filter-button" data-category="DSI">
+              DSI
+            </button>
+            <button class="filter-button" data-category="DS2">
+              DS2
+            </button>
+            <button class="filter-button" data-category="HBI">
+              HBI
+            </button>
+            <button class="filter-button" data-category="IHCI">
+              IHCI
+            </button>
+            <button class="filter-button" data-category="RSS">
+              RSS
+            </button>
+            <button class="filter-button" data-category="ToC">
+              ToC
             </button>
           </div>
         </div>
         <div class="card-group" id="opportunity-list">
-          <!-- Internship opportunities will be added here dynamically -->
+          <!-- Projects will be added here dynamically -->
+          
+          <!-- Hidden message div that shows when no projects are available -->
+          <div id="no-projects-message" class="no-projects-div">
+            <h3>Projects are coming soon!</h3>
+            <p>Meanwhile, please fill out this form to declare your interest in our research experience program.</p>
+            <a href="https://forms.gle/W5PsetQ4kho1mMC9A" target="_blank" class="express-interest-button">Express Interest</a>
+          </div>
         </div>
       </div>
     </section>
 
     <footer id="footer">
       <div class="container">
-        <div class="footer-top-data d-grid">
-          <div class="climdes-data">
-            <a href="index.html" class="logo">
-              <img src="Images/logo.jpeg" alt="" class="logo-image" />
-            </a>
-            <p class="climdes-description">
-              Whether you're a data science enthusiast, an aspiring agricultural
-              expert, or an innovator ready to take on real-world challenges, we
-              invite you to embark on this internship journey with us.
-            </p>
-          </div>
-          <div class="footer-group">
-            <h6 class="footer-title title">CLIMDES</h6>
-            <ul class="list">
-              <li class="list-item">
-                <a href="#" class="nav-link">About Us</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="nav-link">Blog</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="nav-link">Past Interns</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="nav-link">Project Showcase</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-group">
-            <h6 class="title footer-title">Get in Touch</h6>
-            <ul class="list">
-              <li class="list-item">
-                <a href="#" class="nav-link">Facebook</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="nav-link">Youtube</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="nav-link">LinkedIn</a>
-              </li>
-              <li class="list-item">
-                <a href="#" class="nav-link">Instagram</a>
-              </li>
-            </ul>
-          </div>
+        <div class="footer-content">
+          <a href="https://www.lasige.pt" class="logo">
+            <img src="Images/logo.png" alt="LASIGE Logo" class="logo-image" />
+          </a>
         </div>
         <hr class="horizontal-line" />
         <div class="footer-bottom-data">
           <span class="copyright-info">
-            &copy;CLIMDES Internship 2023. All Rights Reserved.
+            &copy; LASIGE Summer of Research 2025. All Rights Reserved.
           </span>
-          <div class="legal-information">
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-          </div>
         </div>
       </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="projects.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

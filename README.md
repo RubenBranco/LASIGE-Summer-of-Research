@@ -1,88 +1,75 @@
-# CLIMDES Internship Website
-![CLIMDES Logo](Images/logo.jpeg)
+# LASIGE Summer of Research Program
 
-## Overview
+<div align="center">
+  <img src="Images/summer_research_logo.png" alt="LASIGE Summer of Research Logo" width="500">
+</div>
 
-This repository contains the source code for the CLIMDES Internship website. The website serves as a platform for showcasing internship opportunities, allowing visitors to explore, apply, and learn more about the CLIMDES internship program. It's built using basic HTML, CSS, and JavaScript/jQuery for interactivity.
+## About the Program
 
-## Installation
+The LASIGE Summer of Research Program offers undergraduate and first-year master students at the [Faculty of Sciences of the University of Lisbon](https://www.ciencias.ulisboa.pt) an exceptional opportunity to immerse themselves in cutting-edge research projects under the guidance of experienced researchers. This 3-month program (July to September) provides hands-on research experience in a vibrant academic environment.
 
-To run the project locally, follow these installation steps:
+## What You'll Gain
 
-1. **Clone the Repository**:
-  Clone this repository to your local machine using Git.
-  ```bash
-  git clone https://github.com/dearlydebbie/climdes.git
-  ```
+### Hands-On Research Experience
+* Work directly on active research projects within LASIGE's research groups
+* Collaborate with expert mentors from our laboratory
+* Contribute to meaningful research with potential for publications or conference presentations
+* Experience research in a flexible format (remote work possible during August)
 
-2. **Navigate to the Project Directory**:
-  Change your current directory to the project folder.
-  ```bash
-  cd climdes
-  ```
+### Comprehensive Training
+* Participate in specialized workshops covering research fundamentals:
+  * Literature reviews and academic writing
+  * Research methodologies
+  * Technical skills workshops (e.g., machine learning, data analysis)
+  * Presentation skills
 
-3. **Open in a Web Browser**:
-  Simply open the `index.html` file in a web browser to view the website.
-  ```bash
-  open index.html
-  ```
+### Community & Networking
+* Join a supportive community of researchers and fellow students
+* Attend academic and social events
+* Build connections with researchers in your field of interest
+* Discover your potential as a researcher in a collaborative environment
 
-## Usage
+## Research Areas
 
-### Navigation
+Our program may offer projects across LASIGE's seven research lines:
 
-The website consists of several sections, including "Home," "About," and "Internships." You can navigate between these sections using the navigation menu.
+* **CPS**: Cyber-Physical Systems
+* **DSI**: Data and Systems Intelligence
+* **DS2**: Dependable and Secure Decentralized Systems
+* **HBI**: Health and Biomedical Informatics
+* **IHCI**: Inclusive Human-Computer Interaction
+* **RSS**: Reliable Software Systems
+* **ToC**: Theory of Computing
 
-### Internship Opportunities
+## Key Dates for 2025
 
-- The "Internships" section displays a list of available internship opportunities.
-- By default, all opportunities are displayed.
-- You can filter opportunities by category (e.g., "Technical" or "Non-Technical") using the filter buttons provided.
+| Milestone | Date |
+|-----------|------|
+| Applications Open | May 5th |
+| Application Deadline | May 31st |
+| Candidate Selection | June 13th |
+| Program Start | June 30th |
+| Program End | September 30th |
 
-### Smooth Scrolling
+## How to Apply
 
-Clicking the "Apply Now" button in the "Home" section smoothly scrolls to the "Internships" section.
+1. Browse the available projects in the Research Opportunities section of our website (look at the description of the repo for link)
+2. Select the project(s) that match your interests and background
+3. Click the "Apply Here" button on the project card
+4. Submit your application before the deadline (May 31st, 2025)
 
-## Project Structure
+If you're interested in the program but don't see any currently available projects, you can [express your interest here](https://forms.gle/W5PsetQ4kho1mMC9A) to be notified when new projects are posted.
 
-The project is organized into the following directories and files:
+## Selection Process
 
-- `index.html`: The main HTML file that defines the structure and content of the website.
-- `style.css`: The CSS file responsible for styling the website.
-- `script.js`: The JavaScript file, including jQuery, for interactivity and dynamic content loading.
-- `Images/`: This directory contains images used in the project.
-- `internships.json`: A JSON file that simulates internship data (for demonstration purposes).
+Applications will be reviewed by project mentors based on:
+* Academic background and relevant coursework
+* Technical skills and experience
+* Motivation and fit for the specific project
+* Potential for growth as a researcher
 
-## Additional Information
+Shortlisted candidates may be contacted for interviews before final selections are announced on June 13th.
 
-- The website design is responsive and adapts to different screen sizes, providing an optimal viewing experience on various devices.
-- The JavaScript code fetches internship data from a JSON file (simulating an external API) and dynamically populates the "Internships" section.
-- Error handling is implemented to display appropriate messages in case of data retrieval issues.
+---
 
-## Compatibility
-
-The website has been tested and confirmed to work on the following browsers:
-
-- Google Chrome
-- Mozilla Firefox
-- Apple Safari
-
-## Screenshots
-
-Here are some screenshots of the CLIMDES Internship Website:
-
-![Home Section](/Screenshots/home.png)
-*Home Section*
-
-![About Section](/Screenshots/about.png)
-*About Section*
-
-![Internships](/Screenshots/internships.png)
-*Internships*
-
-![Footer](/Screenshots/footer.png)
-*Footer*
-
-## Live Demo
-
-To view a live demo of the CLIMDES Internship Website, visit [this link](https://dearlydebbie.github.io/Climdes/).
+*LASIGE Summer of Research is hosted by LASIGE, a research unit of the Department of Informatics at the Faculty of Sciences, University of Lisbon.*
