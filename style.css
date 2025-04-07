@@ -957,3 +957,32 @@ input {
     margin-right: auto;
   }
 }
+
+a {
+  text-decoration: underline;
+  color: var(--primary-accent); /* This uses your existing blue accent color */
+}
+
+
+/* Keep the navigation links as they are (without underline) */
+.nav-link {
+  text-decoration: none; /* Override the global styling for nav links */
+  /* The color is already handled in your existing CSS */
+}
+
+/* If you want to keep other specific links without underline, you can add more exceptions like: */
+.logo a {
+  text-decoration: none;
+}
+
+.apply-button {
+  text-decoration: none;
+}
+
+.express-interest-button {
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+}
