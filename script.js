@@ -48,8 +48,23 @@ $(document).ready(function () {
           // Populate the opportunity card with details
           opportunityCard.innerHTML = `<div class="card">
             <h3 class="title card-title">${project.title}</h3>
-            <a href="https://www.lasige.pt/research-line/${researchLineAcronymToName[project.research_line]}/" target="_blank" class="research-line-tag research-line-${project.research_line}">${project.research_line}</a>
-            <p>${project.description}</p>
+            <div class="card-tags-wrapper">
+              <a href="https://www.lasige.pt/research-line/${researchLineAcronymToName[project.research_line]}/" target="_blank" class="research-line-tag research-line-${project.research_line}">${project.research_line}</a>
+              <div class="students-tag">
+                <i class="fa-solid fa-users"></i>
+                <span>${project.num_students} Openings</span>
+              </div>
+            </div>
+            <div class="card-details-wrapper">
+              <div class="card-details">
+                <strong>Mentors</strong>
+                <span>${project.mentors}</span>
+              </div>
+              <div class="card-details">
+                <strong>Description</strong>
+                <p>${project.description}</p>
+              </div>
+            </div>
             <a href="${project.link}" target="_blank" class="button">Apply Here</a></div>
           `;
 

@@ -317,16 +317,59 @@ input {
   }
 }
 
+.card-tags-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Space between tags */
+  margin-top: 1rem; /* Space above the card tags */
+}
+
+.students-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
+  padding: 0.4rem 0.8rem;
+  background-color: rgb(216, 216, 216);
+  color: black;
+  border-radius: 15px;
+}
+
+.opportunity-card {
+  height: 100%;
+  max-width: 50rem;;
+}
+
+.card-details-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Space between tags */
+  margin-top: 1rem; /* Space above the card details */
+  flex-direction: column; /* Stack the tags vertically */
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
+  flex-direction: column;
+}
+
 .research-line-tag {
-  display: inline-block;
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 15px; /* More curved */
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .research-line-tag:hover {
@@ -550,12 +593,16 @@ input {
 /* Add a bit more padding to the card itself */
 .card {
   text-align: center;
-  margin: 2rem;
   padding: 3rem 2.2rem 2rem; /* Increased bottom padding */
   background-color: var(--light-color);
   border-radius: 1.2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
 }
 
 
@@ -595,7 +642,6 @@ input {
   font-size: 1.8rem;
   line-height: 3.3rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
 }
 
 .card-body p {
@@ -676,7 +722,7 @@ input {
   text-align: center;
   background-color: var(--accent-color);
   color: var(--light-color);
-  padding: 1.4rem 3rem;
+  padding-bo3rem;
   border: 1px solid transparent;
   border-radius: 0.8rem;
   transition: background-color 0.25s;
@@ -769,7 +815,6 @@ input {
 
   .button {
     width: 18rem;
-    padding: 1.8rem 2rem;
   }
 
   .home .button {
@@ -815,13 +860,12 @@ input {
   .card-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 5rem;
   }
 
   .card-title {
     font-size: 1.8rem;
     line-height: 3.3rem;
-    margin-bottom: 1.5rem;
   }
 
   .card-body p {
