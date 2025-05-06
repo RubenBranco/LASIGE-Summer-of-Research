@@ -762,6 +762,54 @@ input {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+.multi-apply-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(243, 156, 18, 0.1);
+  border-left: 4px solid var(--secondary-accent);
+  border-radius: 4px;
+  padding: 1.2rem 2rem;
+  margin: 0 auto 3rem;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.multi-apply-notice:hover {
+  background-color: rgba(243, 156, 18, 0.15);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.multi-apply-notice i {
+  color: var(--secondary-accent);
+  font-size: 2.4rem;
+  margin-right: 1.5rem;
+}
+
+.multi-apply-notice p {
+  color: var(--dark-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .multi-apply-notice {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .multi-apply-notice i {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+}
+
 /*********************** Filter Button **********************/
 /* Styles for the filter buttons used to filter internships by category. */
 
