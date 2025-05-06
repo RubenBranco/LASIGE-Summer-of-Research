@@ -155,4 +155,30 @@ In this summer research project, we want to develop several blossom robots for f
         "research_line": "IHCI",
         "link": "https://forms.gle/G7dRSDvhoV5CrSNa7"
     },
+    {
+        "title": "Testing Message-passing Concurrent Programs",
+        "num_students": 1,
+        "description": `Concurrent programming is notoriously difficult. It is nevertheless unavoidable in a world where the simplest of the smartphones runs on eight cores.
+
+Message passing is a promising approach to develop concurrent programs. The Go programming language says "Don't communicate by sharing memory; share memory by communicating". Still, getting message passing concurrent programs right is far from easy.
+
+Some languages are better than others at getting concurrency right. We believe that the FreeST programming language, https://freest-lang.github.io, is well positioned to address the challenges of concurrent programming. In FreeST, the patterns of messages exchanged by threads, aka, the communication protocol, is written as a type and checked at compile time.
+
+This project aims at writing (or adapting) a series of small concurrent programs to test (and stress) the new FreeST compiler. There may also be opportunities to work on the complier itself.`,
+        "mentors": "Prof. Vasco Vasconcelos, Gil Silva",
+        "research_line": "RSS",
+        "link": "https://forms.gle/eaQkL9YJaZbuZQny9"
+    },
+    {
+        "title": "Wi-Fi-based buildings occupancy detection, estimation, and location",
+        "num_students": 1,
+        "description": `Accurate, real-time data on human presence and location is essential to maximize energy efficiency, space utilization, and occupant comfort in smart buildings.
+
+However, existing occupancy and device tracking methods often suffer from significant limitations. These include static and inflexible deployment across different buildings and reliance on costly, building-specific hardware or extensive software modifications.
+
+This project introduces a new framework for efficiently and rapidly identifying indoor locations and building occupancy. Our approach leverages reusable and adaptable models that enable seamless deployment across diverse environments—without manual configuration or labor-intensive recalibration.`,
+        "mentors": "Prof. José Cecílio",
+        "research_line": "CPS",
+        "link": "https://forms.gle/xX6a4e2AAgSaiGAF8"
+    },
 ];
