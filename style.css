@@ -96,10 +96,6 @@ input {
   text-align: center;
 }
 
-/* section:not(.hero) .text-content-group {
-  margin: 8rem 0 2rem;
-} */
-
 /*************************** Navbar ***************************/
 /* Styles for the navigation bar and logo. */
 
@@ -241,38 +237,34 @@ input {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  min-height: 50vh; /* Reduced from 60vh to decrease vertical space */
-  max-width: 85%; /* Limit width to create whitespace on sides */
-  margin: 0 auto; /* Center the container */
+  min-height: 50vh;
+  max-width: 85%;
+  margin: 0 auto;
   background: url('Images/summer_research_logo.png') no-repeat;
   background-size: contain;
   background-position: center;
-  /* background-color: #f5f8fa; */
   margin-bottom: 40px;
 }
 
 #about {
-  padding-top: 2rem; /* Add some padding to the top of the About section */
+  padding-top: 2rem;
 }
 
-/* Remove the text content from the home section */
 .home .content {
   display: none;
 }
 
-/* Create a new apply button container */
 .apply-button-container {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 100px; /* Increase margin to move button further down */
+  margin-top: 100px;
 }
 
-/* Style for the apply button */
 .apply-button {
   display: inline-block;
   text-align: center;
-  background-color: var(--primary-accent); /* Using blue accent from your color scheme */
+  background-color: var(--primary-accent);
   color: white;
   padding: 1.6rem 3.5rem;
   font-size: 1.8rem;
@@ -285,7 +277,7 @@ input {
 
 .apply-button:hover,
 .apply-button:focus {
-  background-color: #2980b9; /* Slightly darker blue on hover */
+  background-color: #2980b9;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -356,6 +348,86 @@ input {
   justify-content: center;
   gap: 0.5rem; /* Space between icon and text */
   flex-direction: column;
+}
+
+.card-description {
+  height: 30rem;
+  overflow-y: auto;
+  display: block;
+  position: relative;
+  padding-right: 10px;
+}
+
+.card-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-description::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.card-description::-webkit-scrollbar-thumb {
+  background: var(--primary-dark);
+  border-radius: 10px;
+}
+
+.card-description::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-accent);
+}
+
+.card-description:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 10px; /* Matches scrollbar width */
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 100%);
+  pointer-events: none;
+  opacity: 0; /* Default to hidden */
+  transition: opacity 0.2s;
+  z-index: 2;
+}
+
+.card-description.has-overflow.show-scroll-indicator .scroll-indicator {
+  display: block; /* Show the pill when scrollable AND at the top */
+}
+
+.card-description.has-overflow.show-scroll-indicator:after {
+  opacity: 1;
+}
+
+/* Add scroll icon indicator */
+.card-description.has-overflow:before {
+  display: none; /* Remove the arrow that was overlapping text */
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  color: var(--dark-color-lighter);
+  font-weight: 600;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  width: 120px;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  z-index: 5;
+  display: none; /* Default to hidden */
+}
+
+.card-details p {
+  margin-bottom: 0.8rem;
+}
+
+.card-details p:last-child {
+  margin-bottom: 0;
 }
 
 .research-line-tag {
@@ -722,7 +794,6 @@ input {
   text-align: center;
   background-color: var(--accent-color);
   color: var(--light-color);
-  padding-bo3rem;
   border: 1px solid transparent;
   border-radius: 0.8rem;
   transition: background-color 0.25s;

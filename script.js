@@ -27,9 +27,49 @@ const researchLineAcronymToName = {
 };
 
 $(document).ready(function () {
-  // This code runs when the document is fully loaded and ready to be manipulated.
+  
+  function checkDescriptionOverflow() {
+    $('.card-description').each(function() {
+        const cardDescriptionElement = this;
+        const $cardDescription = $(cardDescriptionElement);
 
-  // Function to display projects based on category
+        $cardDescription.off('scroll.descriptionIndicator');
+
+        // Reset classes: remove has-overflow (it will be re-added if needed)
+        // and the new show-scroll-indicator class.
+        // The old at-bottom class is no longer used.
+        $cardDescription.removeClass('has-overflow show-scroll-indicator');
+
+        const hasScrollbar = cardDescriptionElement.scrollHeight > cardDescriptionElement.clientHeight;
+
+        if (hasScrollbar) {
+            $cardDescription.addClass('has-overflow');
+
+            function updateIndicatorState() {
+                // Show indicator only if scrollbar is at the very top (scrollTop is 0 or very close)
+                // A small threshold (e.g., 5px) can account for minor rendering differences.
+                if (cardDescriptionElement.scrollTop < 5) {
+                    if (!$cardDescription.hasClass('show-scroll-indicator')) {
+                        $cardDescription.addClass('show-scroll-indicator');
+                    }
+                } else {
+                    if ($cardDescription.hasClass('show-scroll-indicator')) {
+                        $cardDescription.removeClass('show-scroll-indicator');
+                    }
+                }
+            }
+
+            updateIndicatorState();
+
+            // Attach the scroll event listener to update state on scroll
+            $cardDescription.on('scroll.descriptionIndicator', function() {
+                updateIndicatorState();
+            });
+        }
+    });
+  }
+
+
   function displayProjects(category) {
     // Clear existing opportunities
     $(".opportunity-card").remove();
@@ -52,7 +92,7 @@ $(document).ready(function () {
               <a href="https://www.lasige.pt/research-line/${researchLineAcronymToName[project.research_line]}/" target="_blank" class="research-line-tag research-line-${project.research_line}">${project.research_line}</a>
               <div class="students-tag">
                 <i class="fa-solid fa-users"></i>
-                <span>${project.num_students} Openings</span>
+                <span>${project.num_students} ${project.num_students === 1 ? 'Opening' : 'Openings'}</span>
               </div>
             </div>
             <div class="card-details-wrapper">
@@ -60,9 +100,10 @@ $(document).ready(function () {
                 <strong>Mentors</strong>
                 <span>${project.mentors}</span>
               </div>
-              <div class="card-details">
+              <div class="card-details card-description">
                 <strong>Description</strong>
-                <p>${project.description}</p>
+                <p>${project.description.replace(/\n\n/g, '</p><p>')}</p>
+                <div class="scroll-indicator">Scroll for more</div>
               </div>
             </div>
             <a href="${project.link}" target="_blank" class="button">Apply Here</a></div>
@@ -73,9 +114,12 @@ $(document).ready(function () {
         }
       });
     } else {
-      // If there are no projects available, show the hidden message div
-      $("#no-projects-message").show();
+    // If there are no projects available, show the hidden message div
+    $("#no-projects-message").show();
     }
+    
+    // Check for overflow in descriptions after content is loaded
+    setTimeout(checkDescriptionOverflow, 100);
   }
 
   // Call the displayProjects function to load all projects initially
@@ -90,7 +134,7 @@ $(document).ready(function () {
   });
 
   // Smooth scroll to the Research Opportunities section when "Apply Now" is clicked
-  $(".button").click(function (e) {
+  $(".apply-button").click(function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
