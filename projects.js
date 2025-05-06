@@ -152,7 +152,7 @@ In this project, we want to help them by developing a correct-by-construction ap
 
 In this summer research project, we want to develop several blossom robots for future research. The students will be build a couple of robots and design and develop a simple user study, using both Blossom, in the faculty's premises. (github for the repository https://github.com/hrc2/blossom-public).`,
         "mentors": "Prof. Isabel Neto",
-        "research_line": "IHRI",
+        "research_line": "IHCI",
         "link": "https://forms.gle/G7dRSDvhoV5CrSNa7"
     },
 ];
