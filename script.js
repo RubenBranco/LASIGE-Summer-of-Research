@@ -84,12 +84,17 @@ $(document).ready(function () {
           // Create a new opportunity card for each project
           const opportunityCard = document.createElement('div');
           opportunityCard.classList.add('opportunity-card');
+          
+          let researchLinesHTML = '';
+          project.research_line.forEach(line => {
+            researchLinesHTML += `<a href="https://www.lasige.pt/research-line/${researchLineAcronymToName[line]}/" target="_blank" class="research-line-tag research-line-${line}">${line}</a>`
+          });
 
           // Populate the opportunity card with details
           opportunityCard.innerHTML = `<div class="card">
             <h3 class="title card-title">${project.title}</h3>
             <div class="card-tags-wrapper">
-              <a href="https://www.lasige.pt/research-line/${researchLineAcronymToName[project.research_line]}/" target="_blank" class="research-line-tag research-line-${project.research_line}">${project.research_line}</a>
+              ${researchLinesHTML}
               <div class="students-tag">
                 <i class="fa-solid fa-users"></i>
                 <span>${project.num_students} ${project.num_students === 1 ? 'Opening' : 'Openings'}</span>

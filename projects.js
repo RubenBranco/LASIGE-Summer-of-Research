@@ -8,7 +8,7 @@ However, little is known about which IVAs’ features enhance engagement in this
 
 Our main contributions are: 1) a dataset of text annotated with the emotional information of neurodivergent adults; 2) an emotional model with Small Language Models to recognize neurodivergent emotions from text; 3) customizable and adaptable IVAs co-designed with neurodivergent adults.`,
         "mentors": "Prof. Soraia M. Alarcão, Isabel D. Trancoso",
-        "research_line": "IHCI",
+        "research_line": ["IHCI"],
         "link": "https://forms.gle/YvhhkGX82L2da1gh6"
     },
     {
@@ -22,7 +22,7 @@ The speed guarantees provided are due to the use of a hash function to index ele
 
 To retrieve this data, all one needs is to calculate the hash of the key, to obtain, in constant time, its position. However, hash tables are far from simple, and in the non-stop pursuit of efficiency and speed, these employ increasingly complex mechanisms to retain efficiency across varied scenarios.`,
         "mentors": "Prof. Pedro Ângelo",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/XBrqQ2F7Fhnsnsen8"
     },
     {
@@ -38,7 +38,7 @@ Since their introduction, the programming languages community has developed seve
 
 This project addresses these barriers by automating the generation of liquid types in existing codebases. We will evaluate various prompting techniques across popular large language models (e.g., Copilot, GPT-4o, Claude, and Mistral) to generate correct specifications. Furthermore, we will develop an AI agent tool that generates liquid type specifications from natural language documentation and runs the verifiers to check if the source code is compliant.`,
         "mentors": "Prof. Alcides Fonseca, Paulo Canelas, Catarina Gamboa",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/xBgEG92feuJvVQ1F7"
     },
     {
@@ -46,7 +46,7 @@ This project addresses these barriers by automating the generation of liquid typ
         "num_students": 4,
         "description": `Drones typically rely on on-board computers to see and move through the world. Can we simple use an android phone instead? Lets try to use its sensors such as gps, cameras and its communication capabilities to navigate autonomously! Let's be be the first doing it?`,
         "mentors": "Prof. Luís Pinto",
-        "research_line": "CPS",
+        "research_line": ["CPS"],
         "link": "https://forms.gle/cLydo22YJRjqTHu18"
     },
     {
@@ -58,7 +58,7 @@ The motivation for this work lies in addressing the emotional distance and socia
 
 From a research perspective, the project contributes to the field of Human-Robot Interaction by studying everyday use of robots in naturalistic contexts, surfacing design challenges, ethical considerations, and social implications. The findings may inform the development of more inclusive and empowering technologies for intergenerational connection and remote presence.`,
         "mentors": "Prof. Tiago Guerreiro, Hugo Simão",
-        "research_line": "IHCI",
+        "research_line": ["IHCI"],
         "link": "https://forms.gle/pyDa9rPrJ3wGmTK26"
     },
     {
@@ -70,7 +70,7 @@ Additional concerns include how recipients perceive robot-mediated help, whether
 
 In both cases, older adults will be invited to collaborate with or delegate tasks to a robot to assist others, such as delivering messages, offering small services, or spreading kindness. The goal is to better understand how altruism is redefined through robotics, and how the dynamics of identity, intention, and reception play out when technology becomes the intermediary.`,
         "mentors": "Prof. Tiago Guerreiro, Hugo Simão",
-        "research_line": "IHCI",
+        "research_line": ["IHCI"],
         "link": "https://forms.gle/LxAA6NPGMmi1A97a6"
     },
     {
@@ -82,7 +82,7 @@ In this project, we employ ebserver, an automated, empirical framework with fine
 
 Applying rigorous statistical methods (for example, multivariate regression), we will derive energy coefficients that quantify the marginal cost of each setting. These coefficients will drive personalized, context-aware recommendations: though some tips (such as lowering refresh rate for static content or favoring Wi-Fi over cellular) are already well understood, many subtler inefficiencies, like the differing impact of dark mode on OLED versus LCD panels, remain hidden without empirical data to support it. By translating these insights into clear, actionable advice, our work empowers users to fine-tune their device configurations, extend battery life, and develop a nuanced understanding of what really drives mobile energy consumption.`,
         "mentors": "Prof. Wellington de Oliveira Júnior",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/FfzfL34NnCWqAgit7"
     },
     {
@@ -96,7 +96,7 @@ Besides the compilation approach, one can opt for interpretation, where a progra
 
 Just-in-Time compilation is an advanced compiler technique, aiming to increase the efficiency of compiled programs, by inspecting the program's execution and optimizing certain parts of it. In the JVM, the JiT compiler analizes the program's execution, and for those parts of the programs that are executed most frequently, it compiles them directly to machine code, which is executed faster. Besides compiling, other optimizations, such as dead code elimination, inlining or loop optimizations may also be performed.`,
         "mentors": "Prof. Pedro Ângelo",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/hhxp8mbycki1aaJZ8"
     },
     {
@@ -108,7 +108,7 @@ This summer project aims to explore the integration of open-access Parkinson’s
 
 By addressing these aims, this work will support future research on advanced machine learning applications in PD, supporting more personalized and interpretable health solutions that reflect the complexity of decision support systems in Parkinson’s care.`,
         "mentors": "Prof. Diogo Soares",
-        "research_line": "DSI",
+        "research_line": ["DSI"],
         "link": "https://forms.gle/STKnBdKR8DHMSDyCA"
     },
     {
@@ -118,7 +118,7 @@ By addressing these aims, this work will support future research on advanced mac
 
 A CBFT-Wallet foi desenvolvida em Kotlin (https://github.com/bernymac/CBFT-Wallet) e suporta atualmente Bitcoin e Ethereum. No entanto, os algoritmos para assinaturas Ethereum estão implementados em C e são importados através do Java JNI. O objectivo deste projeto é implementar os algoritmos de assinaturas Ethereum em Kotlin ou em Java e testar a implementação desenvolvida num cluster de servidores pertencente ao grupo de investigação.`,
         "mentors": "Prof. Bernardo Ferreira, Prof. Alysson Bessani",
-        "research_line": "DS2",
+        "research_line": ["DS2"],
         "link": "https://forms.gle/H32m6KeY4DMyHajv6"
     },
     {
@@ -130,7 +130,7 @@ However, developers now spend more time adding the annotations. In this project 
 
 Another direction is to explore how to add LLM support for a language that does not exist yet!`,
         "mentors": "Prof. Alcides Fonseca",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/CEyAAWf5Fm4RVPba9"
     },
     {
@@ -142,7 +142,7 @@ Mathematicians like Fields Medalist Terrence Tao are now using computer programs
 
 In this project, we want to help them by developing a correct-by-construction approach to generating programs/proofs that instead of relying on LLMs, rely on mathematical principles, so they are never wrong.`,
         "mentors": "Prof. Alcides Fonseca",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/KyRApkWrBWTuNYE29"
     },
     {
@@ -152,7 +152,7 @@ In this project, we want to help them by developing a correct-by-construction ap
 
 In this summer research project, we want to develop several blossom robots for future research. The students will be build a couple of robots and design and develop a simple user study, using both Blossom, in the faculty's premises. (github for the repository https://github.com/hrc2/blossom-public).`,
         "mentors": "Prof. Isabel Neto",
-        "research_line": "IHCI",
+        "research_line": ["IHCI"],
         "link": "https://forms.gle/G7dRSDvhoV5CrSNa7"
     },
     {
@@ -166,7 +166,7 @@ Some languages are better than others at getting concurrency right. We believe t
 
 This project aims at writing (or adapting) a series of small concurrent programs to test (and stress) the new FreeST compiler. There may also be opportunities to work on the complier itself.`,
         "mentors": "Prof. Vasco Vasconcelos, Gil Silva",
-        "research_line": "RSS",
+        "research_line": ["RSS"],
         "link": "https://forms.gle/eaQkL9YJaZbuZQny9"
     },
     {
@@ -178,7 +178,7 @@ However, existing occupancy and device tracking methods often suffer from signif
 
 This project introduces a new framework for efficiently and rapidly identifying indoor locations and building occupancy. Our approach leverages reusable and adaptable models that enable seamless deployment across diverse environments—without manual configuration or labor-intensive recalibration.`,
         "mentors": "Prof. José Cecílio",
-        "research_line": "CPS",
+        "research_line": ["CPS"],
         "link": "https://forms.gle/xX6a4e2AAgSaiGAF8"
     },
     {
@@ -195,7 +195,7 @@ The project makes the following key contributions:
 
 By enabling UAV swarms to adaptively balance fault tolerance and spatial awareness, this research contributes to the development of resilient autonomous systems capable of operating under adverse conditions. From a societal perspective, such systems can improve the effectiveness of emergency response and environmental surveillance. From a research standpoint, the project bridges the gap between distributed systems theory and autonomous robotics, offering new insights and tools for designing dependable multi-agent systems.`,
         "mentors": "Prof. Hasan Heydari, Prof. Alan Oliveira de Sá",
-        "research_line": "CPS",
+        "research_line": ["CPS", "DS2"],
         "link": "https://forms.gle/vL24gTVoBir2rUmT8"
     },
 ];
