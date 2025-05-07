@@ -181,4 +181,21 @@ This project introduces a new framework for efficiently and rapidly identifying 
         "research_line": "CPS",
         "link": "https://forms.gle/xX6a4e2AAgSaiGAF8"
     },
+    {
+        "title": "Coverage-Optimal Fault-Tolerant Swarm of UAVs",
+        "num_students": 2,
+        "description": `Unmanned Aerial Vehicle (UAV) swarms are increasingly being deployed in mission-critical applications such as search and rescue, environmental monitoring, and disaster response. These applications demand both high spatial coverage for effective data collection and robust fault tolerance to ensure reliability in the face of individual UAV failures or communication disruptions. In environments lacking centralized infrastructure, such as remote areas, autonomous operation and peer-to-peer communication become essential.
+
+This project addresses the dual challenge of achieving coverage-optimal and fault-tolerant swarm behavior. While maximizing spatial coverage allows the swarm to observe a larger area and collect more diverse information, doing so often leads to sparser configurations that are more vulnerable to disconnections caused by failures. Conversely, designing for high fault tolerance typically results in redundant or clustered formations that limit coverage. Our work investigates this fundamental trade-off and provides both a theoretical and practical framework for navigating it.
+
+The project makes the following key contributions:
+• It formally characterizes the inherent trade-off between fault tolerance and spatial coverage using tools from distributed computing and geometric graph theory.
+• It introduces novel algorithms for determining UAV placement that balance these two objectives, based on a user-defined trade-off parameter.
+• It implements distributed protocols for leader election, broadcast, and consensus tailored to the resulting fault-tolerant network topologies.
+
+By enabling UAV swarms to adaptively balance fault tolerance and spatial awareness, this research contributes to the development of resilient autonomous systems capable of operating under adverse conditions. From a societal perspective, such systems can improve the effectiveness of emergency response and environmental surveillance. From a research standpoint, the project bridges the gap between distributed systems theory and autonomous robotics, offering new insights and tools for designing dependable multi-agent systems.`,
+        "mentors": "Prof. Hasan Heydari, Prof. Alan Oliveira de Sá",
+        "research_line": "CPS",
+        "link": "https://forms.gle/vL24gTVoBir2rUmT8"
+    },
 ];
