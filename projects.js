@@ -156,6 +156,21 @@ In this summer research project, we want to develop several blossom robots for f
         "link": "https://forms.gle/G7dRSDvhoV5CrSNa7"
     },
     {
+        "title": "Message-passing Concurrent Programming",
+        "num_students": 1,
+        "description": `Concurrent programming is notoriously difficult. It is nevertheless unavoidable in a world where the simplest of the smartphones runs on eight cores.
+
+Message-passing is usually seen as an higher level approach to concurrent programmming, when compared to shared memory. Nevertheless, programming message passing systems is not easy-peasy. It is quite easy to write programs where the expectations about the messages exchanged by the various threads are not met, leading to runtime errors or deadlock embraces.
+
+What if we could check at compile time that threads comply to given protocols describing the patterns of messages to be exchanged? 
+This project aims at developing classical applications of concurrent programming using the FreeST programming language, https://freest-lang.github.io.
+
+The student shall design and program, both the protocols and the code for different applications of concurrent programming.`,
+        "mentors": "Prof. Bernardo Almeida",
+        "research_line": ["RSS"],
+        "link": "https://forms.gle/Y7boDDcubgfYAb3H6"
+    },
+    {
         "title": "Testing Message-passing Concurrent Programs",
         "num_students": 1,
         "description": `Concurrent programming is notoriously difficult. It is nevertheless unavoidable in a world where the simplest of the smartphones runs on eight cores.
