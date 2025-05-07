@@ -330,7 +330,22 @@ input {
 
 .opportunity-card {
   height: 100%;
-  max-width: 50rem;;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+}
+
+.card-group .opportunity-card:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .card-group {
+    gap: 5rem;
+  }
+  
+  .opportunity-card {
+    margin-bottom: 0;
+  }
 }
 
 .card-details-wrapper {
