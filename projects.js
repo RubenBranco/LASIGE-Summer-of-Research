@@ -213,4 +213,12 @@ By enabling UAV swarms to adaptively balance fault tolerance and spatial awarene
         "research_line": ["CPS", "DS2"],
         "link": "https://forms.gle/vL24gTVoBir2rUmT8"
     },
+    {
+        "title": "Legged Locomotion - pupper robot",
+        "num_students": 1,
+        "description": `This project is about building a robot from scratch. It touches on almost every aspect of robotics: mechanical design, electronics, control, simulation, teleoperation, and machine learning. The student will follow a tutorial made by the developers of this open-source robot (hands-on robotics). Then, he will use a simulator to train a gait policy for the robot to learn how to walk. This policy will be loaded onto the real robot to enable its teleoperation.`,
+        "mentors": "Prof. João Bimbo",
+        "research_line": ["CPS", "DSI"],
+        "link": "https://forms.gle/4FAs3rngTpnHLB3F6"
+    },
 ];
