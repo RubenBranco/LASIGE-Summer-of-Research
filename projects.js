@@ -221,4 +221,16 @@ By enabling UAV swarms to adaptively balance fault tolerance and spatial awarene
         "research_line": ["CPS", "DSI"],
         "link": "https://forms.gle/4FAs3rngTpnHLB3F6"
     },
+    {
+        "title": "Knowledge and Data: boosting explainability and performance of real-world machine learning applications",
+        "num_students": 2,
+        "description": `This internship offers hands-on experience at the intersection of domain knowledge and cutting-edge AI techniques. You will explore how structured knowledge (e.g., knowledge graphs) can be combined with data to make machine learning models more effective and explainable. Projects will focus on real-world applications in two domains: science and news.
+
+Ideal candidates should have basic Python experience. Knowledge of machine learning and knowledge graphs is a plus, but not mandatory.
+
+Join us to contribute to meaningful research with real-world impact, while deepening your skills in responsible AI development.`,
+        "mentors": "Prof. Catia Pesquita",
+        "research_line": ["DSI", "HBI"],
+        "link": "https://forms.gle/JKoSJziuwGvxsLip7"
+    },
 ];
